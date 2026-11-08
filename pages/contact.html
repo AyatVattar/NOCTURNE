@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOCTURNE | Contact</title>
+
+<link rel="stylesheet" href="../style/home.css">
+  <link rel="stylesheet" href="../style/contact.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <nav class="nav container">
+
+            <a href="index.html" class="nav-logo">NOCTURNE</a>
+
+            <div class="nav-menu" id="nav-menu">
+
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <div class="nav-close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav-actions">
+
+                <a href="home.html#products" class="search-icon">
+                    <i class="ri-search-line"></i>
+                </a>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="contact">
+
+        <div class="content">
+
+            <span class="section-label">WE WOULD LOVE TO HEAR FROM YOU</span>
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Have a question, suggestion or simply want to say hello?
+                Send us a message.
+            </p>
+
+        </div>
+
+
+        <div class="container">
+
+            <div class="contactInfo">
+
+                <div class="box">
+
+                    <div class="icon">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Location</h3>
+                        <p>Online Store</p>
+                    </div>
+
+                </div>
+
+
+                <div class="box">
+
+                    <div class="icon">
+                        <i class="ri-mail-line"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>nocturne@example.com</p>
+                    </div>
+
+                </div>
+
+
+                <div class="box">
+
+                    <div class="icon">
+                        <i class="ri-time-line"></i>
+                    </div>
+
+                    <div class="text">
+                        <h3>Availability</h3>
+                        <p>Monday — Friday</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contactForm">
+
+                <form id="contact-form">
+
+                    <h2>Send A Message</h2>
+
+                    <div class="inputBox">
+
+                        <input type="text" id="name" required>
+
+                        <span>Full Name</span>
+
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <input type="email" id="email" required>
+
+                        <span>Email Address</span>
+
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <textarea id="message" required></textarea>
+
+                        <span>Your Message</span>
+
+                    </div>
+
+
+                    <div class="inputBox">
+
+                        <input type="submit" value="SEND MESSAGE">
+
+                    </div>
+
+                    <p class="form-message"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-brand">
+                <h2>NOCTURNE</h2>
+                <p>Elegance beyond the ordinary.</p>
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 NOCTURNE. All rights reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+   <script src="../javascripts/home.js"></script>
+
+    <script>
+
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+
+            event.preventDefault();
+
+            document.querySelector('.form-message').textContent =
+                'Thank you! Your message has been received in this demo.';
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>

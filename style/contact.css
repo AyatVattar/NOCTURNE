@@ -1,0 +1,194 @@
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 145px 8% 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(13,9,13,.9),rgba(13,9,13,.94)),
+        url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=1800')
+        center/cover fixed;
+}
+
+.contact .content {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.contact .content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(50px,7vw,75px);
+    font-weight: 500;
+    color: #eee5e9;
+    letter-spacing: 5px;
+    margin: 15px 0;
+}
+
+.contact .content p {
+    color: #b7a9b1;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.contactInfo {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactInfo .box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(33,25,33,.75);
+    border: 1px solid rgba(201,189,196,.15);
+}
+
+.contactInfo .box .icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: #721d35;
+    color: white;
+    font-size: 22px;
+    margin-right: 18px;
+}
+
+.contactInfo .box .text h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    font-weight: 500;
+    color: #d78da1;
+    margin-bottom: 5px;
+}
+
+.contactInfo .box .text p {
+    font-size: 12px;
+    color: #c9bdc4;
+    line-height: 1.8;
+}
+
+.contactForm {
+    flex: 1 1 400px;
+    padding: 35px;
+    background: rgba(25,19,25,.95);
+    border: 1px solid rgba(201,189,196,.2);
+}
+
+.contactForm h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #eee5e9;
+    margin-bottom: 30px;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 16px;
+    background: #100d10;
+    border: 1px solid #4a3542;
+    color: white;
+    outline: none;
+    font-family: inherit;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.contactForm .inputBox textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contactForm .inputBox input:focus,
+.contactForm .inputBox textarea:focus {
+    border-color: #a33b55;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #a99ba3;
+    font-size: 12px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    top: -9px;
+    left: 10px;
+    padding: 0 7px;
+    background: #191319;
+    color: #d78da1;
+}
+
+.contactForm input[type="submit"] {
+    width: auto;
+    padding: 14px 30px;
+    background: #721d35;
+    border: 1px solid #a33b55;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contactForm input[type="submit"]:hover {
+    background: transparent;
+    border-color: #d78da1;
+}
+
+.form-message {
+    color: #d78da1;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+@media(max-width: 768px) {
+
+    .contact {
+        padding: 120px 6% 60px;
+    }
+
+    .contactForm {
+        padding: 25px;
+    }
+
+    .contactInfo {
+        flex-basis: 100%;
+    }
+
+}
